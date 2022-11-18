@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About us Page</title>
+    <link rel="stylesheet" href="/static/about.css">
+    <!-- <link rel="stylesheet" href="homepage.css"> -->
+</head>
+<body>
+         
+    <div class="wrapper">
+       
+        <div class="logo">
+            <img src="{{ user_image}}" alt="">
+        </div>
+        <ul class="nav-area">
+            <li><a href="{{url_for('homepage')}}">Home</a></li>
+            
+
+        </ul>
+    </div>
+
+    
+	
+	<section class="background firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<p class="text-big">About US</p>
+				
+				<p class="text-small" style="color: black;">
+					This project aims at building a web App that automatically estimates food attributes such as ingredients and nutritional value by classifying the input image of food.  Our method employs<span style="color: white;">Clarifai's AI-Driven Food Detection Model</span>  for accurate food identification and Food API's to give the nutritional value of the identified food.
+				</p>
+				<br>
+				<p class="center"><a href="#Order"
+				style="text-decoration:none;color:rgb(9, 10, 98);">
+						Below are the people who
+						works in our project</a>
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="service">
+		<h1 class="h-primary center" style="margin-top:30px;text-align:center;">
+			Our Team
+		</h1>
+	<div id="services">
+			<div class="box">
+				<img src=
+"/static/pics/Ashwin.jpg"
+					alt="picture goes here">
+			
+				<p class="center">
+					<a href="#xyz" style="text-decoration:none;color:black;
+		font-weight:bold;font-family: 'Langar', cursive;">
+						ASHWIN KUMAR 
+					</a>
+				</p>
+				<p style="font-family: sans-serif">TEAM LEADER</p>
+			</div>
+			<div class="box">
+				<img src=
+"/static/pics/GAN.jpeg"
+					alt="picture goes here">
+				
+				<p class="center">
+					<a href="#abc" style="text-decoration:none;color:black;
+		font-weight:bold;font-family: 'Langar', cursive;">
+						GANESAN
+					</a>
+				</p>
+				
+				<p style="font-family: sans-serif ">TEAM MEMBER</p>
+			
+			</div>
+            <div class="box">
+				<img src="/static/pics/SRI.jpeg"
+					alt="picture goes here">
+				
+				<p class="center">
+					<a href="#abc" style="text-decoration:none;color:black;
+		font-weight:bold;font-family: 'Langar', cursive;">
+						SRIRAM
+					</a>
+				</p>
+				
+				<p style="font-family: sans-serif ">TEAM MEMBER</p>
+				
+			</div>
+			<div class="box">
+				<img src=
+"/static/pics/NIVI.jpg"
+					alt="picture goes here">
+				<br>
+				<p class="center">
+					<a href="#xyz" style="text-decoration:none;color:black;
+		font-weight:bold;font-family: 'Langar', cursive;">
+						NIVENDHAN
+					</a>
+				</p>
+                <p style="font-family: sans-serif ">TEAM MEMBER</p>
+				
+
+			</div>
+		</div>
+	
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			NUTRITION ASSISTANT APPLICATION
+		</p>
+
+	</footer>
+</body>
+
+</html>

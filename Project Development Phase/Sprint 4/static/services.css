@@ -1,0 +1,159 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+
+
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  
+}
+
+.nav-list {
+  width: 70%;
+  display: flex;
+}
+
+.nav-list li {
+
+  list-style: none;
+  padding: 2px 6px;
+}
+
+.nav-list li a {
+
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover {
+  color: grey;
+}
+
+.rightNav {
+  width: 50;
+  text-align: right;
+}
+
+
+.nav-area {
+
+  top: 2px;
+list-style: none;
+margin-top: 0px;
+padding-top: 40px;
+  float: right;
+
+}
+.nav-area li {
+display: inline-block;
+}
+.nav-area li a {
+color:rgb(22, 12, 12);
+text-decoration: none;
+padding: 5px 20px;
+font-family: poppins;
+font-size: 16px;
+font-weight: 100;
+text-transform: uppercase;
+font-family: cursive;
+/* border-style: solid;
+border-radius: 5px;
+box-shadow: inset;
+border-color:white;	
+background-color: #fff; */
+}
+.nav-area li a:hover {
+background: #fff;
+color: #333;
+
+}
+.logo {
+float: left;
+
+  width: 10%;
+}
+.logo img {
+width: 70%;
+padding: 15px 0;
+  border-radius: 50%;
+
+}
+.services{
+  background: #f1f1f1;
+  text-align: center;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}

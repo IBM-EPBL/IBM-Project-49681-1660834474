@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/registration.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   </head>
+<body>
+  <div class="container">
+    <div class="title">update</div>
+    <div class="content">
+      <form action="{{url_for('updateprofile')}}" method="POST" class="login-email">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your height" name="username">
+          </div>
+          <div class="input-box">
+            <span class="details">Height</span>
+            <input type="text" placeholder="Enter your height" name="height">
+          </div>
+          <div class="input-box">
+            <span class="details">Weight</span>
+            <input type="text" placeholder="Enter your weight" name="weight">
+          </div>
+          <div class="input-box">
+            <span class="details">Gender</span>
+            <select name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Blood</span>
+            <input type="text" placeholder="Enter your Blood group" name="blood">
+          </div>
+          
+          
+        </div>
+        <span>{{msg}}</span>
+        <div class="button">
+          <input type="submit" href="{{url_for('userprofile')}}" value="update">
+         
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
