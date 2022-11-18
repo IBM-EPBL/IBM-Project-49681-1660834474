@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+
+	
+}
+.wrapper {
+	width: 1220px;
+	margin: auto;
+}
+header {
+	background-image: url(/static/pics/pic.jpg);
+	filter: blur(0px);
+	
+	
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: fixed;
+	width: 100%;
+
+}
+.nav-area {
+	
+    top: 2px;
+	list-style: none;
+	margin-top: 0px;
+	padding-top: 40px;
+
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color:white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-family: cursive;
+	/* border-style: solid;
+	border-radius: 5px;
+	box-shadow: inset;
+	border-color:white;	
+	background-color: #fff; */
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+
+}
+.logo {
+	float: left;
+
+    width: 10%;
+}
+.logo img {
+	width: 70%;
+	padding: 15px 0;
+    border-radius: 50%;
+
+}
+.welcome-text {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	margin-top: 10% ;
+	text-align: left;
+	padding-left: 90px;
+	font-family: cursive;
+
+
+
+}
+.welcome-text h1 {
+	text-align: left;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 80px;
+
+}
+.welcome-text h1 span {
+	color: #e48b1e;
+	font-size: 70px;
+	font-family: cursive;
+
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width:100% ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}

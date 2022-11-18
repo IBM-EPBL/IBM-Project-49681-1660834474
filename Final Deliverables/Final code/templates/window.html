@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition_Assistant</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="/static/window.css">
+
+</head>
+
+<body>
+    <script>
+        function act(e){
+          e.preventDefault()
+          console.log(e.target.file.files[0])
+          alert("hii")
+        }
+      </script>
+    <div class="windows">
+        <form action="{{ url_for('window') }}" method="POST">
+            <h1>What are the nutrition value present in your food just type to know.</h1>
+           <div class="row">
+            <div class="foodname">
+                <h2>Food name :</h2>
+                <input type="text" class="food-name" name="foodname">
+
+            </div><br>
+            <div class="imagesearch">
+                <h2>Upload picture:</h2>
+                <input type="file" accept="image/*" class="request-image" id="image" name="image">
+                <input class="btn btn-outline-primary" type="submit" value="Submit">
+            </div>
+        </div>
+     
+        </form>
+    </div>
+</body>
+
+</html>
