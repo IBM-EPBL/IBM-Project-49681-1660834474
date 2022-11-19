@@ -1,0 +1,6 @@
+flask
+ibm_db
+requests
+clarifai_grpc
+flask_mail
+
